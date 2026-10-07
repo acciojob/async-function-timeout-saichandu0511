@@ -6,7 +6,7 @@ let output = document.getElementById("output");
 
 
 function wait(ms){
-	return new promise (function (resolve)){
+	return new promise (function (resolve){
 		setTimeout (resolve,ms);
 	});
 }
@@ -18,6 +18,6 @@ async function showMessage(){
 	
 	await wait(time);
 
-	output.textcontent = message;
+	output.textContent = message;
 }
 btn.addEventListener("click",showMessage);
